@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 91, 80, 69; /* theme.body */
+  --background-rgb: 245, 241, 232; /* theme.background */
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --accent-gradient: linear-gradient(
+    45deg,
+    rgba(107, 92, 142, 0.9), /* theme.link */
+    rgba(92, 80, 123, 0.9),  /* midpoint */
+    rgba(87, 74, 114, 0.9),  /* theme.linkHover */
+    rgba(116, 100, 153, 0.9)  /* lighter purple */
+  );
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  font-family: var(--font-mono);
+  letter-spacing: -0.02em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.gradient-text {
+  background-image: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 300% 300%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+.gradient-border {
+  position: relative;
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-image: var(--accent-gradient);
+  opacity: 0.5;
+  background-size: 300% 300%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
