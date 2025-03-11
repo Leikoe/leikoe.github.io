@@ -91,29 +91,29 @@ Rust is statically typed but has type inference. Variables are immutable by defa
 fn main() {
     // Immutable variable
     let x = 5;
-    
+
     // This would cause a compile error:
     // x = 6;
-    
+
     // Mutable variable
     let mut y = 5;
     y = 6; // This works fine
-    
+
     // Constants require type annotation
     const MAX_POINTS: u32 = 100_000;
-    
+
     // Multiple variable declaration
     let (a, b) = (1, 2);
-    
+
     // Basic types
     let integer: i32 = 42;
     let float: f64 = 3.14;
     let boolean: bool = true;
     let character: char = 'z';
     let text: &str = "Hello";
-    
+
     println!(
-        "Values: {}, {}, {}, {}, {}", 
+        "Values: {}, {}, {}, {}, {}",
         integer, float, boolean, character, text
     );
 }
@@ -127,7 +127,7 @@ Functions in Rust are defined using the `fn` keyword:
 fn main() {
     let result = add(5, 3);
     println!("The result is: {}", result);
-    
+
     // If expression
     if result > 7 {
         println!("Result is greater than 7");
@@ -136,7 +136,7 @@ fn main() {
     } else {
         println!("Result is 3 or less");
     }
-    
+
     // Match expression (pattern matching)
     match result {
         8 => println!("Result is 8"),
@@ -144,14 +144,14 @@ fn main() {
         1..=5 => println!("Result is between 1 and 5"),
         _ => println!("Result is something else"),
     }
-    
+
     // Loop with a counter
     let mut counter = 0;
     while counter < 5 {
         println!("Counter: {}", counter);
         counter += 1;
     }
-    
+
     // For loop over a range
     for i in 0..5 {
         println!("i: {}", i);
@@ -173,31 +173,31 @@ Rust's ownership system is its most distinctive feature:
 fn main() {
     // String is a heap-allocated type
     let s1 = String::from("hello");
-    
+
     // This moves ownership of s1 to s2
     let s2 = s1;
-    
+
     // This would cause an error - s1 is no longer valid
     // println!("{}", s1);
-    
+
     // This works fine
     println!("{}", s2);
-    
+
     // Passing ownership to a function
     takes_ownership(s2);
-    
+
     // s2 is now invalid
     // println!("{}", s2); // This would cause an error
-    
+
     // References allow borrowing without taking ownership
     let s3 = String::from("world");
-    
+
     // &s3 borrows s3 without taking ownership
     let len = calculate_length(&s3);
-    
+
     // s3 is still valid
     println!("The length of '{}' is {}.", s3, len);
-    
+
     // Mutable references
     let mut s4 = String::from("hello");
     change(&mut s4);
@@ -244,7 +244,7 @@ impl Person {
     fn new(name: String, age: u32) -> Person {
         Person { name, age }
     }
-    
+
     // Method with &self parameter (similar to 'this' in other languages)
     fn greet(&self) {
         println!(
@@ -252,7 +252,7 @@ impl Person {
             self.name, self.age
         );
     }
-    
+
     // Method that modifies the instance
     fn have_birthday(&mut self) {
         self.age += 1;
@@ -276,17 +276,17 @@ fn main() {
     // Create a Person instance
     let mut alice = Person::new(String::from("Alice"), 30);
     alice.greet();
-    
+
     // Modify the instance
     alice.have_birthday();
     alice.greet();
-    
+
     // Create and use enum variants
     let m1 = Message::Quit;
     let m2 = Message::Move { x: 10, y: 20 };
     let m3 = Message::Write(String::from("Hello, Rust!"));
     let m4 = Message::ChangeColor(255, 0, 0);
-    
+
     m1.call();
     m2.call();
     m3.call();
@@ -305,7 +305,7 @@ use std::io::{self, Read};
 fn main() {
     // Using match for error handling
     let file_result = File::open("hello.txt");
-    
+
     let mut file = match file_result {
         Ok(file) => file,
         Err(error) => {
@@ -313,13 +313,13 @@ fn main() {
             return;
         }
     };
-    
+
     // Using the ? operator for propagating errors
     let username = read_username_from_file().unwrap_or_else(|error| {
         println!("Error reading username: {:?}", error);
         String::from("default_user")
     });
-    
+
     println!("Username: {}", username);
 }
 

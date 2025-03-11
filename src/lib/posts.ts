@@ -18,6 +18,7 @@ export type PostMetadata = {
   excerpt: string;
   slug: string;
   tags?: string[];
+  repoUrl?: string;
 };
 
 export type PostData = PostMetadata & {
@@ -42,7 +43,7 @@ export function getSortedPostsData(): PostMetadata[] {
     return {
       id,
       slug: id,
-      ...(matterResult.data as { title: string; date: string; excerpt: string; tags?: string[] }),
+      ...(matterResult.data as { title: string; date: string; excerpt: string; tags?: string[]; repoUrl?: string }),
     };
   });
   
@@ -90,7 +91,7 @@ export async function getPostData(slug: string): Promise<PostData> {
     id: slug,
     slug,
     content,
-    ...(matterResult.data as { title: string; date: string; excerpt: string; tags?: string[] }),
+    ...(matterResult.data as { title: string; date: string; excerpt: string; tags?: string[]; repoUrl?: string }),
   };
 }
 
