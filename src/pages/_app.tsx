@@ -1,4 +1,5 @@
 import '@/styles/globals.css'
+import 'prismjs/themes/prism-tomorrow.css' // Import PrismJS theme
 import type { AppProps } from 'next/app'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'

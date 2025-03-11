@@ -3,6 +3,11 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import { unified } from 'unified';
+import remarkParse from 'remark-parse';
+import remarkRehype from 'remark-rehype';
+import rehypeStringify from 'rehype-stringify';
+import rehypePrism from 'rehype-prism-plus';
 
 const postsDirectory = path.join(process.cwd(), 'src/content/posts');
 
@@ -70,9 +75,12 @@ export async function getPostData(slug: string): Promise<PostData> {
   // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents);
   
-  // Use remark to convert markdown into HTML string
-  const processedContent = await remark()
-    .use(html)
+  // Use unified with rehype-prism-plus for syntax highlighting
+  const processedContent = await unified()
+    .use(remarkParse)
+    .use(remarkRehype)
+    .use(rehypePrism, { ignoreMissing: true })
+    .use(rehypeStringify)
     .process(matterResult.content);
   
   const content = processedContent.toString();

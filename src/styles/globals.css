@@ -74,3 +74,146 @@ h1, h2, h3, h4, h5, h6 {
     background-position: 0% 50%;
   }
 }
+
+/* Improved code blocks */
+pre[class*="language-"] {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Default to no wrap for most code blocks */
+pre[class*="language-"] code {
+  white-space: pre;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+/* Special handling for breaking on long lines only when necessary */
+pre[class*="language-bash"],
+pre[class*="language-text"] {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+code[class*="language-"] {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  tab-size: 2;
+  max-width: 100%;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #999988;
+  font-style: italic;
+}
+
+.token.namespace {
+  opacity: 0.7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol {
+  color: #0086b3;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin {
+  color: #183691;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #d73a49;
+}
+
+.token.function,
+.token.attr-value {
+  color: #6f42c1;
+}
+
+.token.keyword {
+  color: #d73a49;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #e90;
+}
+
+.language-bash .token.function {
+  color: #6f42c1;
+}
+
+.language-rust .token.function {
+  color: #6f42c1;
+}
+
+.language-rust .token.keyword {
+  color: #d73a49;
+}
+
+.language-rust .token.string {
+  color: #032f62;
+}
+
+.language-rust .token.comment {
+  color: #6a737d;
+}
+
+/* Line numbers */
+.line-numbers .line-numbers-rows {
+  border-right: 1px solid #ddd;
+}
+
+.line-numbers-rows > span:before {
+  color: #999;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 640px) {
+  pre[class*="language-"] {
+    padding: 0.75rem;
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+  
+  code[class*="language-"] {
+    font-size: 0.85rem;
+  }
+}
+
+/* For long words that might still break layout */
+.prose p, .prose li {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
