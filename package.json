@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@microflash/rehype-figure": "^2.1.4",
     "gray-matter": "^4.0.3",
     "next": "^14.1.0",
     "prismjs": "^1.30.0",
