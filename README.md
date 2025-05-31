@@ -1,6 +1,6 @@
-# Computer Science Blog
+# Léo's blog
 
-A simple, static blog for writing about computer science topics. Built with Next.js and deployed to GitHub Pages.
+My simple, static blog for writing posts in markdown easily. Built with Next.js and deployed to GitHub Pages.
 
 ## Features
 
@@ -22,7 +22,7 @@ A simple, static blog for writing about computer science topics. Built with Next
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/cs-blog.git
+   git clone https://github.com/Leikoe/blog.git
    cd cs-blog
    ```
 
@@ -70,7 +70,7 @@ The blog is configured to deploy to GitHub Pages automatically using GitHub Acti
 
 1. Push your changes to the `main` branch
 2. GitHub Actions will build and deploy your site
-3. Your site will be available at `https://yourusername.github.io/cs-blog/`
+3. Your site will be available at `https://leikoe.github.io/blog/`
 
 ## Customization
 
