@@ -5,7 +5,7 @@ export default function About() {
     return (
         <>
             <Head>
-                <title>About | CS Blog</title>
+                <title>About | Léo&apos;s Blog</title>
                 <meta name="description" content="About this computer science blog" />
             </Head>
 

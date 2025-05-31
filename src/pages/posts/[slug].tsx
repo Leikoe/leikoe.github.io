@@ -7,7 +7,7 @@ export default function Post({ post }: { post: PostData }) {
     return (
         <>
             <Head>
-                <title>{post.title + " | CS Blog"}</title>
+                <title>{post.title + " | Léo's Blog"}</title>
                 <meta name="description" content={post.excerpt} />
             </Head>
 

@@ -7,7 +7,7 @@ export default function Home({ posts }: { posts: PostMetadata[] }) {
     return (
         <>
             <Head>
-                <title>CS Blog</title>
+                <title>Léo&apos;s Blog</title>
                 <meta name="description" content="A blog about computer science and programming" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
