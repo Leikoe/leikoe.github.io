@@ -15,11 +15,10 @@ export default function Home({ posts }: { posts: PostMetadata[] }) {
             <div className="space-y-16 py-8">
                 <section className="py-16 max-w-3xl mx-auto">
                     <h1 className="text-4xl md:text-5xl font-normal mb-6 tracking-tight gradient-text inline-block h-[8rem] sm:h-[4rem]">
-                        Computer Science Blog
+                        Léo&apos;s Blog
                     </h1>
                     <p className="text-xl text-theme-body max-w-2xl leading-relaxed">
-                        Exploring algorithms, data structures, and programming concepts through
-                        a lens of simplicity and elegance.
+                        Personal diary of an aspiring computer science wizard.
                     </p>
                 </section>
 
