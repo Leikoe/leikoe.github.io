@@ -35,6 +35,10 @@ export default function Post({ post }: { post: PostData }) {
                         </time>
                     </div>
                     <h1 className="text-3xl lg:text-4xl font-normal mb-8 gradient-text inline-block tracking-tight">{post.title}</h1>
+                    <p className="text-lg text-theme-muted mb-8">
+                        {post.excerpt}
+                    </p>
+
                     {post.tags && post.tags.length > 0 && (
                         <div className="flex flex-wrap gap-2 mt-6">
                             {post.tags.map((tag) => (
