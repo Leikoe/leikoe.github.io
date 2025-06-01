@@ -241,14 +241,48 @@ code[class*="language-"] {
     border-color: var(--accent-gradient);
 }
 
-figure {
+.prose figure {
     margin: 1.5em 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-figcaption {
+.prose figcaption {
     margin-top: 0.5em;
     font-size: 0.9em;
     color: #555;
     font-style: italic;
+}
+
+/* Footnotes https://github.com/micromark/micromark-extension-gfm-footnote?tab=readme-ov-file#css */
+/* Style the footnotes section. */
+.footnotes {
+    /* add some space before the footnotes */
+    margin-top: 10em;
+    font-size: smaller;
+    color: #8b949e;
+    border-top: 1px solid #30363d;
+}
+
+/* Hide the section label for visual users. */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    word-wrap: normal;
+    border: 0;
+}
+
+/* Place `[` and `]` around footnote references. */
+[data-footnote-ref]::before {
+    content: '[';
+}
+
+[data-footnote-ref]::after {
+    content: ']';
 }

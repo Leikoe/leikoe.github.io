@@ -71,7 +71,7 @@ export default function Post({ post }: { post: PostData }) {
                 </header>
 
                 <div
-                    className="prose prose-lg max-w-none prose-headings:tracking-tight prose-headings:font-normal prose-p:text-theme-body prose-a:text-theme-link prose-a:font-normal prose-a:no-underline hover:prose-a:underline prose-strong:text-theme-heading prose-li:text-theme-body"
+                    className="prose prose-lg max-w-none prose-headings:tracking-tight prose-headings:font-normal prose-p:text-theme-body prose-a:text-theme-link prose-a:font-normal prose-a:no-underline hover:prose-a:underline prose-strong:text-theme-heading prose-li:text-theme-body prose-p:text-justify"
                     dangerouslySetInnerHTML={{ __html: post.content }}
                 />
             </article>
