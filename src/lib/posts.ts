@@ -5,6 +5,7 @@ import { unified } from 'unified';
 import remarkParse from 'remark-parse';
 import remarkGfm from 'remark-gfm'
 import remarkRehype from 'remark-rehype';
+import rehypeRaw from 'rehype-raw'
 import rehypeFigure from "@microflash/rehype-figure";
 import rehypePrism from 'rehype-prism-plus';
 import rehypeStringify from 'rehype-stringify';
@@ -81,7 +82,8 @@ export async function getPostData(slug: string): Promise<PostData> {
     const processedContent = await unified()
         .use(remarkParse)
         .use(remarkGfm)
-        .use(remarkRehype)
+        .use(remarkRehype, { allowDangerousHtml: true })
+        .use(rehypeRaw)
         .use(rehypeFigure)
         .use(rehypePrism, { ignoreMissing: true })
         .use(rehypeStringify)
