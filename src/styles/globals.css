@@ -235,6 +235,12 @@ code[class*="language-"] {
     color: var(--accent-gradient)
 }
 
+.prose hr {
+    background-color: var(--accent-gradient);
+    color: var(--accent-gradient);
+    border-color: var(--accent-gradient);
+}
+
 figure {
     margin: 1.5em 0;
     text-align: center;
