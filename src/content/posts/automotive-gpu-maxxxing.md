@@ -6,6 +6,8 @@ tags: ['nvidia', 'gpu']
 ---
 # Making a datacenter gpu server in my student bedroom
 
+> Disclaimer: These are now old autonomous car gpus which were probably discontinued. They're not an alternative to real datacenter GPUs. Lots of things are disabled, broken or inconvinient / unreliable for real word use.
+
 Back in 2023 when I was in Japan with my best friend, he introduced me to local LLMs and showed me the amazing LLamaCpp[^llamacpp].
 He was planning his own GPU box build for hosting LLMs locally (he was serving models on his old gaming laptop at the time).
 He ended up buying two new(!!) P40s off ebay. When they arrived months later, he travelled half the country to come meet me and we unboxed the cards together with friends.
