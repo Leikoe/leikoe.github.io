@@ -141,17 +141,17 @@ This is why we (with a mechanical engineer friend) popped the retention washers 
 I then bought multiple files (I'm a dumdum and bought the wrong size at first so I had to make another trip to the hardware store with a SXM heatsink in my backpack..)
 ![Picture of the filing setup. It took multiple days to file the 4 heatsinks because it hurts my wrist pretty fast.](/automotive-gpu-maxxxing/filing_the_poor_heatsink.png)
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sxm heatsink dust everywhere on my desk and fingers rn <a href="https://t.co/Jr7DOftDPG">pic.twitter.com/Jr7DOftDPG</a></p>&mdash; Léo (@Leik0w0) <a href="https://twitter.com/Leik0w0/status/1901019345309806610?ref_src=twsrc%5Etfw">March 15, 2025</a></blockquote>
+![Tweet about the heatsink dusk everywhere.](/automotive-gpu-maxxxing/heatsink_dust_tweet.png)
 
 > Note: If you don't want to go through the trauma that is making holes into **beautiful datacenter grade SXM accelerator heatsinks**, some Xianyu sellers sell the adapter brackets directly for 50$ each. Though I couldn't really afford to spend 200$ more and decided I would rather drill through my own SXM heatsinks
 > ![Heatsink brackets adapters listing on Xianyu.](/automotive-gpu-maxxxing/heatsink_adapter.png)
 
 I also managed to misalign all the heatsinks..
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Bro how did I manage to miss-align all 3 heatsinks <a href="https://t.co/TYYwejqN3D">pic.twitter.com/TYYwejqN3D</a></p>&mdash; Léo (@Leik0w0) <a href="https://twitter.com/Leik0w0/status/1899961949334483027?ref_src=twsrc%5Etfw">March 12, 2025</a></blockquote>
+![Tweet of the heatsinks being misaligned.](/automotive-gpu-maxxxing/misalign_tweet.png)
 (In retrospect, this is probably because the heatsink screws could move around since the holes were now 4 times their width..)
 
 After installing everything, playing with pcie bifurcation settings on both my desktops's bioses and giving up on windows, I had a working 4x A100 node in my bedroom! (don't mind the blahaj in the background)
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The bedroom gpu node is finally done ! <a href="https://t.co/3bo2TjyZmn">pic.twitter.com/3bo2TjyZmn</a></p>&mdash; Léo (@Leik0w0) <a href="https://twitter.com/Leik0w0/status/1901415971291537531?ref_src=twsrc%5Etfw">March 16, 2025</a></blockquote>
+![Tweet of the finished build.](/automotive-gpu-maxxxing/build_done_tweet.png)
 
 This gpu box is currently plugged into my r9 7950X 24/7 and it's the reason I don't play games right now (even wuwa).
 
@@ -194,8 +194,7 @@ Then with only the two running at PCIE 3.0 x16:
 ![NCCL tests all reduce test running on the two cards @ PCIE 3.0 x16.](/automotive-gpu-maxxxing/two_cards_all_reduce.png)
 
 Also if you were wondering, Minecraft runs fine on A100:
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Minecraft does run on nvidia A100D (very poorly) <a href="https://t.co/TSd52rRLOF">pic.twitter.com/TSd52rRLOF</a></p>&mdash; Léo (@Leik0w0) <a href="https://twitter.com/Leik0w0/status/1898487119447822447?ref_src=twsrc%5Etfw">March 8, 2025</a></blockquote>
-(The post says very poorly but this was when I was running the cards at PCIE 3.0 x4. Now it runs fine ..)
+![Minecraft running on DRIVE A100. (The post says very poorly but this was when I was running the cards at PCIE 3.0 x4. Now it runs fine ..)](/automotive-gpu-maxxxing/minecraft_tweet.png)
 
 > Note: for the NVLINK, I ended up finding a guy on Xianyu who would modify the cards to make them work but it's 50 qty minimum and it seems pretty sketchy. From what I know, the chip supports NVLINK but the pcb misses the NVLINK traces so they change it. **It's not a software side problem. The gsp reports that the card doesn't support NVLINK**
 
@@ -211,6 +210,3 @@ Also if you were wondering, Minecraft runs fine on A100:
 
 [^llamacpp]: llama.cpp. LLM inference in C/C++. [https://github.com/ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp)
 [^1]: In TCC (compute) mode, not WDDM (graphic) mode. Note that these modes are windows driver only.
-
-
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
