@@ -213,4 +213,4 @@ Also if you were wondering, Minecraft runs fine on A100:
 [^1]: In TCC (compute) mode, not WDDM (graphic) mode. Note that these modes are windows driver only.
 
 
-<script defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
