@@ -1,7 +1,7 @@
 ---
 title: 'Automotive GPU maxxxing'
 date: '2025-05-31'
-excerpt: "The story of how I ended up with a 4x A100 SXM datacenter gpu node in my bedroom (for less than two 4090s)."
+excerpt: "The story of how I ended up with a 4x A100 SXM (1PFlops) datacenter gpu node in my bedroom (for less than two 4090s)."
 tags: ['nvidia', 'gpu']
 ---
 # Making a datacenter gpu server in my student bedroom
