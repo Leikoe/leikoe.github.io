@@ -4,7 +4,6 @@ date: '2025-05-31'
 excerpt: "The story of how I ended up with a 4x A100 SXM datacenter gpu node in my bedroom (for less than two 4090s)."
 tags: ['nvidia', 'gpu']
 ---
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 # Making a datacenter gpu server in my student bedroom
 
 Back in 2023 when I was in Japan with my best friend, he introduced me to local LLMs and showed me the amazing LLamaCpp[^llamacpp].
@@ -212,3 +211,5 @@ Also if you were wondering, Minecraft runs fine on A100:
 
 [^llamacpp]: llama.cpp. LLM inference in C/C++. [https://github.com/ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp)
 [^1]: In TCC (compute) mode, not WDDM (graphic) mode. Note that these modes are windows driver only.
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
