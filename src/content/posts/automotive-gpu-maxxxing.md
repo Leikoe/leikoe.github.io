@@ -151,7 +151,7 @@ I also managed to misalign all the heatsinks..
 (In retrospect, this is probably because the heatsink screws could move around since the holes were now 4 times their width..)
 
 After installing everything, playing with pcie bifurcation settings on both my desktops's bioses and giving up on windows, I had a working 4x A100 node in my bedroom! (don't mind the blahaj in the background)
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The bedroom gpu node is finally done ! <a href="https://t.co/3bo2TjyZmn">pic.twitter.com/3bo2TjyZmn</a></p>&mdash; Léo (@Leik0w0) <a href="https://twitter.com/Leik0w0/status/1901415971291537531?ref_src=twsrc%5Etfw">March 16, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The bedroom gpu node is finally done ! <a href="https://t.co/3bo2TjyZmn">pic.twitter.com/3bo2TjyZmn</a></p>&mdash; Léo (@Leik0w0) <a href="https://twitter.com/Leik0w0/status/1901415971291537531?ref_src=twsrc%5Etfw">March 16, 2025</a></blockquote>
 
 This gpu box is currently plugged into my r9 7950X 24/7 and it's the reason I don't play games right now (even wuwa).
 
