@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Script from 'next/script'
 import { GetStaticProps, GetStaticPaths } from 'next'
 import { getAllPostIds, getPostData, PostData } from '@/lib/posts'
 
@@ -75,6 +76,8 @@ export default function Post({ post }: { post: PostData }) {
                     dangerouslySetInnerHTML={{ __html: post.content }}
                 />
             </article>
+
+            <Script src="https://platform.twitter.com/widgets.js" charSet='utf-8' strategy="afterInteractive" />
         </>
     )
 }
