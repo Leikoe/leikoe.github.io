@@ -38,17 +38,9 @@ export default function Custom404() {
                         404 – Page Not Found
                     </h1>
                     <p className="text-theme-body max-w-xl">
-                        Oops! The page you’re looking for doesn’t exist.
-                    </p>
-                </div>
-
-                <div className="prose prose-lg max-w-none prose-headings:tracking-tight prose-headings:font-normal prose-p:text-theme-body prose-li:text-theme-body prose-a:text-theme-link prose-a:font-normal prose-a:no-underline hover:prose-a:underline prose-strong:text-theme-heading">
-                    <p>
-                        It looks like nothing was found at this location. You can return to the{' '}
-                        <Link href="/">
-                            home page
-                        </Link>{' '}
-                        or explore other sections of the blog.
+                        Oops! The page you’re looking for doesn’t exist. <br /><br />
+                        If you arrived here through a reference from another post, it might be that I haven&apos;t finished writing the referenced post.
+                        If so, please come back later. Thank you for your interest in my little blog :D
                     </p>
                 </div>
             </div>
